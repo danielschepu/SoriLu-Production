@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css" />
+    <script src="script.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <title>SoriLu Production</title>
+  </head>
+  <body>
+    <navbar class="SectionRow topnav bg1 Mic" id="myTopnav">
+      <a href="1. Pagina principală.html">Pagina Principală</a>
+      <a href="2. Servicii.html">Servicii</a>
+      <a href="3. Portofoliu.html">Portofoliu</a>
+      <p href="#" class="logo">SoriLu<br />Production</p>
+      <a href="4. Recenzii.html">Recenzii</a>
+      <a href="5. Contact.html">Contact</a>
+      <a href="6. Despre noi.html">Despre noi</a>
+      <a href="7. Loghin.html" id="loghinlogo" class="active"
+        ><img src="poze/iconite/LogoLoghin.png"
+      /></a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </navbar>
+
+    <section class="SectionRow bg1" style="height: 120vh">
+      <div class="tabel logintable CenterDiv" style="width: auto; height: auto">
+        <a id="logintext">Înregistrare</a>
+        <div class="inputs">
+          <div>
+            <label for="firstName">Nume</label>
+            <input
+              class="CaseteRegister"
+              type="text"
+              id="firstName"
+              name="firstName"
+              placeholder="Introduceți numele"
+              oninput="validateFirstName(this)"
+              required
+            />
+
+            <br />
+
+            <label for="lastName">Prenume</label>
+            <input
+              class="CaseteRegister"
+              type="text"
+              id="lastName"
+              name="lastName"
+              placeholder="Introduceți prenumele"
+              oninput="validateLastName(this)"
+              required
+            />
+
+            <br />
+
+            <label for="email">Adresa de e-mail</label>
+            <input
+              class="CaseteRegister"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Introduceți adresa de e-mail"
+              oninput="validateEmail(this)"
+              required
+            />
+
+            <br />
+
+            <label>Gen</label> <br />
+            <input
+              class="inputremember"
+              type="radio"
+              id="male"
+              name="gender"
+              value="male"
+              onchange="validateGender()"
+              required
+            />
+            <label for="male">Masculin</label>
+            <input
+              class="inputremember"
+              type="radio"
+              id="female"
+              name="gender"
+              value="female"
+              onchange="validateGender()"
+              required
+            />
+            <label for="female">Feminin</label>
+            <br />
+
+            <label for="code">Cod</label>
+            <input
+              class="CaseteRegister"
+              type="text"
+              id="code"
+              name="code"
+              placeholder="Introduceți codul"
+              oninput="validateCode(this)"
+              required
+            />
+
+            <br />
+
+            <label for="phone">Număr de telefon</label>
+            <input
+              class="CaseteRegister"
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Introduceți numărul de telefon"
+              oninput="validatePhone(this)"
+              required
+            />
+
+            <br />
+
+            <label for="password">Parolă</label>
+            <input
+              class="CaseteRegister"
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Introduceți parola"
+              oninput="validatePassword(this)"
+              required
+            />
+
+            <br />
+            <button class="buttonnn1" onclick="handleButtonClick1()">
+              Înregistrare
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr />
+
+    <footer>
+      <div class="column2-f">
+        <h3>Contactează-ne</h3>
+        <ul>
+          <li>
+            <img class="item-social" src="poze/iconite/Telefon.png" />
+            <a href="tel:067 250 666">067 150 666</a>
+          </li>
+          <li>
+            <img class="item-social" src="poze/iconite/Mail.png" />
+            <a href="mailto:sorilu@prodaction.md">sorilu@prodaction.md</a>
+          </li>
+          <li>
+            <img class="item-social" src="poze/iconite/adresa.png" />
+            <a href="https://goo.gl/maps/itZxpskv1jgsQTWS9"
+              >Columna 32, Chișinău</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="column2-f">
+        <a href="#" class="logo">SoriLu<br />Production</a>
+      </div>
+      <div class="column2-f">
+        <h3>Urmărește-ne</h3>
+        <ul>
+          <li>
+            <img class="item-social" src="poze/iconite/Instagram.png" />
+            <a href="https://www.instagram.com/luchian.photographer/"
+              >Instagram</a
+            >
+          </li>
+          <li>
+            <img class="item-social" src="poze/iconite/Facebook.png" />
+            <a href="https://www.facebook.com/flori.peresecina">Facebook</a>
+          </li>
+          <li>
+            <img class="item-social" src="poze/iconite/Twitter.png" />
+            <a href="https://www.facebook.com/flori.peresecina">Twitter</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  function validateFirstName(input) {
+    const regex = /^[a-zA-Z]{3,}$/;
+    if (!regex.test(input.value)) {
+      input.setCustomValidity(
+        "Numele trebuie să conțină minim 3 litere și să nu conțină spații."
+      );
+    } else {
+      input.setCustomValidity("");
+    }
+  }
+
+  function validateLastName(input) {
+    const regex = /^[a-zA-Z]{3,}$/;
+    if (!regex.test(input.value)) {
+      input.setCustomValidity(
+        "Prenumele trebuie să conțină minim 3 litere și să nu conțină spații."
+      );
+    } else {
+      input.setCustomValidity("");
+    }
+  }
+
+  function validateEmail(input) {
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!regex.test(input.value)) {
+      input.setCustomValidity("Adresa de e-mail nu este validă.");
+    } else {
+      input.setCustomValidity("");
+    }
+  }
+
+  function validateCode(input) {
+    const regex = /^[0-9]{10}$/;
+    if (!regex.test(input.value)) {
+      input.setCustomValidity("Codul trebuie să conțină 10 cifre.");
+    } else {
+      input.setCustomValidity("");
+    }
+  }
+
+  function validatePhone(input) {
+    const regex = /^0[0-9]{8}$/;
+    if (!regex.test(input.value)) {
+      input.setCustomValidity(
+        "Numărul de telefon trebuie să înceapă cu 0 și să conțină 9 cifre."
+      );
+    } else {
+      input.setCustomValidity("");
+    }
+  }
+
+  function validatePassword(input) {
+    const regex = /^(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}$/;
+    if (!regex.test(input.value)) {
+      input.setCustomValidity(
+        "Parola trebuie să conțină minim 8 caractere, cel puțin o literă mare și cel puțin o cifră."
+      );
+    } else {
+      input.setCustomValidity("");
+    }
+  }
+
+  function handleButtonClick1() {
+    const firstNameInput = document.getElementById("firstName");
+    const lastNameInput = document.getElementById("lastName");
+    const emailInput = document.getElementById("email");
+    const genderInput = document.querySelector('input[name="gender"]:checked');
+    const codeInput = document.getElementById("code");
+    const phoneInput = document.getElementById("phone");
+    const passwordInput = document.getElementById("password");
+
+    if (
+      firstNameInput.checkValidity() &&
+      lastNameInput.checkValidity() &&
+      emailInput.checkValidity() &&
+      genderInput &&
+      codeInput.checkValidity() &&
+      phoneInput.checkValidity() &&
+      passwordInput.checkValidity()
+    ) {
+      alert("Formularul a fost completat corect!");
+    } else {
+      alert("Vă rugăm să completați corect toate câmpurile obligatorii.");
+    }
+  }
+</script>

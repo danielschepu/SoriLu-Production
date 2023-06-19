@@ -1,0 +1,80 @@
+@media (max-width: 1500px) {
+  .containers {
+    display: grid;
+    grid-template-columns: repeat(2, 40%);
+    grid-template-rows: repeat(3, auto);
+    gap: 30px;
+    justify-content: center;
+  }
+  .basic-section {
+    width: 100%;
+    height: 100%;
+    padding: 15% 0%;
+  }
+  .gif {
+    width: 80%;
+  }
+}
+
+@media (max-width: 800px) {
+  .containers {
+    display: grid;
+    grid-template-columns: repeat(1, 80%);
+    grid-template-rows: repeat(6, auto);
+  }
+}
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: flex;
+    width: 51px;
+    height: 51px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100vh !important;
+    z-index: 100;
+    background-color: #ddd;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: flex;
+    text-align: left;
+  }
+  .topnav.responsive .logo {
+    font-family: "Rochester";
+    font-style: normal;
+    font-size: 40px;
+    text-transform: capitalize;
+    text-align: center;
+    color: #000000;
+    position: relative;
+    display: none;
+  }
+}
+@media (max-width: 1000px) {
+  .gallery .image {
+    width: calc(100% / 2);
+  }
+}
+@media (max-width: 600px) {
+  .gallery .image {
+    width: 100%;
+    padding: 4px;
+  }
+}

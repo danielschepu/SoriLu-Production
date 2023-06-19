@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css" />
+    <script src="script.js"></script>
+    <title>Servicii</title>
+  </head>
+  <body>
+    <navbar class="topnav" id="myTopnav">
+      <a href="1. Pagina principală.html">Pagina Principală</a>
+      <a href="2. Servicii.html">Servicii</a>
+      <a href="3. Portofoliu.html">Portofoliu</a>
+      <p href="#" class="logo">SoriLu<br />Production</p>
+      <a href="4. Recenzii.html">Recenzii</a>
+      <a href="5. Contact.html" class="active">Contact</a>
+      <a href="6. Despre noi.html">Despre noi</a>
+      <a href="7. Loghin.html" id="loghinlogo"
+        ><img src="poze/iconite/LogoLoghin.png"
+      /></a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </navbar>
+    <hr id="nav-barr" />
+
+    <section class="SectionRow" style="height: 80vh">
+      <div id="contactborder">
+        <h1 style="font-size: 80px">Contact</h1>
+        <div class="SectionRow">
+          <div
+            style="
+              display: flex;
+              flex-wrap: space-around;
+              justify-content: space-around;
+              align-items: center;
+            "
+          >
+            <div>
+              <img src="poze/pagina 5/contact.png" style="height: 300px" />
+            </div>
+            <div id="formm">
+              <label for="firstName">Numele și prenumele</label>
+              <br />
+              <div style="display: flex">
+                <input
+                  style="width: 50% !important"
+                  class="CaseteRegister"
+                  type="text"
+                  id="nume"
+                  placeholder="Nume"
+                />
+                <input
+                  style="width: 50% !important"
+                  class="CaseteRegister"
+                  type="text"
+                  id="nume"
+                  placeholder="Prenume"
+                />
+              </div>
+              <label for="email">Adresa de e-mail</label>
+              <input
+                class="CaseteRegister"
+                type="text"
+                id="email"
+                placeholder="E-mail"
+              />
+              <label for="nr">Numărul de telefon</label>
+              <input
+                class="CaseteRegister"
+                type="text"
+                id="telefon"
+                placeholder="Nr. telefon"
+              /><br />
+              <label for="email">Adresează o întrebare</label>
+              <input
+                class="CaseteRegister"
+                type="text"
+                id="intrebare"
+                placeholder="Întrebare"
+                style="height: 70px !important"
+              />
+              <button class="buttonnn1" onclick="validateForm()">
+                Trimite
+              </button>
+              <p id="successMessage" style="display: none; text-align: center">
+                Întrebarea a sosit la noi, te contactăm cât mai curând pe
+                numărul de telefon!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="mapouter">
+      <div class="gmap_canvas">
+        <iframe
+          class="gmap_iframe"
+          width="100%"
+          frameborder="0"
+          scrolling="no"
+          marginheight="0"
+          marginwidth="0"
+          src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=fotomax&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+        ></iframe
+        ><a href="https://piratebay-proxys.com/">Piratebay</a>
+      </div>
+      <style>
+        .mapouter {
+          position: relative;
+          text-align: right;
+          width: 100%;
+          height: 600px;
+          display: flex;
+        }
+        .gmap_canvas {
+          overflow: hidden;
+          background: none !important;
+          width: 100%;
+          height: 600px;
+        }
+        .gmap_iframe {
+          height: 600px !important;
+        }
+      </style>
+    </div>
+    <img
+      src="poze/pagina 5/oho.png"
+      style="
+        margin: 20px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+      "
+    />
+    <hr />
+    <footer>
+      <div class="column2-f">
+        <h3>Contactează-ne</h3>
+        <ul>
+          <li>
+            <img class="item-social" src="poze/iconite/Telefon.png" />
+            <a href="tel:067 250 666">067 150 666</a>
+          </li>
+          <li>
+            <img class="item-social" src="poze/iconite/Mail.png" />
+            <a href="mailto:sorilu@prodaction.md">sorilu@prodaction.md</a>
+          </li>
+          <li>
+            <img class="item-social" src="poze/iconite/adresa.png" />
+            <a href="https://goo.gl/maps/itZxpskv1jgsQTWS9"
+              >Columna 32, Chișinău</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="column2-f">
+        <a href="#" class="logo">SoriLu<br />Production</a>
+      </div>
+      <div class="column2-f">
+        <h3>Urmărește-ne</h3>
+        <ul>
+          <li>
+            <img class="item-social" src="poze/iconite/Instagram.png" />
+            <a href="https://www.instagram.com/luchian.photographer/"
+              >Instagram</a
+            >
+          </li>
+          <li>
+            <img class="item-social" src="poze/iconite/Facebook.png" />
+            <a href="https://www.facebook.com/flori.peresecina">Facebook</a>
+          </li>
+          <li>
+            <img class="item-social" src="poze/iconite/Twitter.png" />
+            <a href="https://www.facebook.com/flori.peresecina">Twitter</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

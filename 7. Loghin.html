@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css" />
+    <script src="script.js"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <title>SoriLu Production</title>
+  </head>
+  <body>
+    <navbar class="SectionRow topnav bg1 Mic" id="myTopnav">
+      <a href="1. Pagina principală.html">Pagina Principală</a>
+      <a href="2. Servicii.html">Servicii</a>
+      <a href="3. Portofoliu.html">Portofoliu</a>
+      <p href="#" class="logo">SoriLu<br />Production</p>
+      <a href="4. Recenzii.html">Recenzii</a>
+      <a href="5. Contact.html">Contact</a>
+      <a href="6. Despre noi.html">Despre noi</a>
+      <a href="7. Loghin.html" id="loghinlogo" class="active"
+        ><img src="poze/iconite/LogoLoghin.png"
+      /></a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </navbar>
+
+    <section class="SectionRow Menu bg1">
+      <div
+        class="tabel logintable CenterDiv"
+        style="width: 556px; height: 462px"
+      >
+        <a id="logintext">Logare</a>
+        <div class="imputs">
+          <div>
+            <label for="username">E-mail</label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="Adresa e-mail"
+              oninput="ValidateEmail(this)"
+              required
+            />
+            <br />
+            <label for="password">Parola</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Parola"
+              oninput="ValidatePassword(this)"
+              required
+            />
+            <label class="remember">
+              <input class="inputremember" type="checkbox" name="remember" />
+              Remember me
+            </label>
+            <div style="display: flex; justify-content: space-around">
+              <a class="buttonnn1" href="8. Inregistrare.html">Înregistrare</a>
+              <button class="buttonnn1" onclick="handleButtonClick()">
+                Conectează-te
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr />
+
+    <footer>
+      <div class="column2-f">
+        <h3>Contactează-ne</h3>
+        <ul>
+          <li>
+            <img class="item-social" src="poze/iconite/Telefon.png" />
+            <a href="tel:067 250 666">067 150 666</a>
+          </li>
+          <li>
+            <img class="item-social" src="poze/iconite/Mail.png" />
+            <a href="mailto:sorilu@prodaction.md">sorilu@prodaction.md</a>
+          </li>
+          <li>
+            <img class="item-social" src="poze/iconite/adresa.png" />
+            <a href="https://goo.gl/maps/itZxpskv1jgsQTWS9"
+              >Columna 32, Chișinău</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="column2-f">
+        <a href="#" class="logo">SoriLu<br />Production</a>
+      </div>
+      <div class="column2-f">
+        <h3>Urmărește-ne</h3>
+        <ul>
+          <li>
+            <img class="item-social" src="poze/iconite/Instagram.png" />
+            <a href="https://www.instagram.com/luchian.photographer/"
+              >Instagram</a
+            >
+          </li>
+          <li>
+            <img class="item-social" src="poze/iconite/Facebook.png" />
+            <a href="https://www.facebook.com/flori.peresecina">Facebook</a>
+          </li>
+          <li>
+            <img class="item-social" src="poze/iconite/Twitter.png" />
+            <a href="https://www.facebook.com/flori.peresecina">Twitter</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
